@@ -11,7 +11,7 @@ const MAX_COUNT = 10;
 const MIN_COUNT = 2;
 
 function updateButtons() {
-  const rowCount = table.row.length;
+  const rowCount = table.rows.length;
   const columnCount = table.rows[0]?.cells.length || 0;
 
   appendRowBtn.disabled = rowCount >= MAX_COUNT;
